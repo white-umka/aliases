@@ -18,6 +18,6 @@ alias fetchconf='nano ~/.config/fastfetch/config.jsonc'
 alias pyenv='source venv/bin/activate'
 alias wp='python /home/umka/scripts/wallpath/main.py'
 alias volume='wpctl set-volume @DEFAULT_AUDIO_SINK@'
-
+alias grepos='find ~ -type d -name ".git" -exec dirname {} \; 2>/dev/null' # Показать все локальные git-репозитории
 #wifi problem
 alias wifiproblem='sudo nix-shell -p usb-modeswitch --run "usb_modeswitch -v 0bda -p 1a2b -K"'

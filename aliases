@@ -1,0 +1,23 @@
+export NIX_LD="/nix/store/vsscr6bsvm5ajp4z16iqyvbij8wiz16a-ld-library-path/share/nix-ld/lib/ld.so"
+export NIX_LD_LIBRARY_PATH="/nix/store/vsscr6bsvm5ajp4z16iqyvbij8wiz16a-ld-library-path/share/nix-ld/lib"
+
+#nixos
+alias nixconf='sudo nano /etc/nixos/configuration.nix'
+alias rebuild='sudo nixos-rebuild switch'
+alias hyprconf='nano ~/.config/hypr/hyprland.conf'
+alias aliasconf='nano ~/.bashrc'
+alias wallpaper='nano ~/.config/hypr/hyprpaper.conf'
+alias kittyconf='nano ~/.config/kitty/kitty.conf'
+alias build='sudo nix-env --list-generations --profile /nix/var/nix/profiles/system'
+alias killdeadlockmod='pkill -9 -f -i deadlock'
+alias killme='sudo shutdown -h now'
+alias pg='ping google.com'
+alias zapret='cd /home/umka/zapret-discord-youtube-linux && ./service.sh'
+alias f='fastfetch'
+alias fetchconf='nano ~/.config/fastfetch/config.jsonc'
+alias pyenv='source venv/bin/activate'
+alias wp='python /home/umka/scripts/wallpath/main.py'
+alias volume='wpctl set-volume @DEFAULT_AUDIO_SINK@'
+
+#wifi problem
+alias wifiproblem='sudo nix-shell -p usb-modeswitch --run "usb_modeswitch -v 0bda -p 1a2b -K"'
